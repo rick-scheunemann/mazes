@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Mazes</title>
+    <meta name="description" content="Simple web page for generating mazes using differnent algorithms">
+    <link rel="SHORTCUT ICON" href="./favicon.svg" type="image/x-icon">
+    <meta name="keywords" content="mazes">
+</head>
+
+<body>
+    <div id="header image">
+        <!-- <img id="banner" src="./images/header.png"> -->
+    </div>
+
+    <form id="mazeForm">
+        <p>Algorithm:</p>
+        <div>
+            <input type="radio" id="BinaryTree" name="algorithm" value="BinaryTree">
+            <label for="contactChoice1">Binary Tree</label>
+
+            <input type="radio" id="Aldous-Broder" name="algorithm" value="Aldous-Broder">
+            <label for="contactChoice1">Aldous-Broder</label>
+
+            <input type="radio" id="Ellers" name="algorithm" value="Ellers">
+            <label for="contactChoice2">Eller's</label>
+
+            <input type="radio" id="GrowingTree" name="algorithm" value="GrowingTree">
+            <label for="contactChoice3">Growing Tree</label>
+        </div>
+        <hr>
+        <br />
+
+        <button type="submit" id="btn_generate">
+            Generate Maze
+        </button>
+    </form>
+
+    <pre id="log">
+    </pre>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
